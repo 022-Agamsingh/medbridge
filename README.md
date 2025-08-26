@@ -1,6 +1,6 @@
-# Prescripto - Doctor Appointment Web App
+# MedBrige - Doctor Appointment Web App
 
-**Prescripto** is a full-stack web application designed to make healthcare more accessible by simplifying the process of booking doctor appointments. It offers three levels of login: **Patient**, **Doctor**, and **Admin**, each with distinct features tailored to their roles. The app integrates **online payment gateways (Stripe and Razorpay)** to facilitate seamless and secure payments. Built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js), Prescripto provides an efficient, user-friendly experience for both patients and healthcare providers.
+**MedBrige** is a full-stack web application designed to make healthcare more accessible by simplifying the process of booking doctor appointments. It offers three levels of login: **Patient**, **Doctor**, and **Admin**, each with distinct features tailored to their roles. The app integrates **online payment gateways (Stripe and Razorpay)** to facilitate seamless and secure payments. Built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js), MedBrige provides an efficient, user-friendly experience for both patients and healthcare providers.
 
 ## 🛠️ Tech Stack
 
@@ -14,13 +14,15 @@
 
 ### 1. Three-Level Authentication
 
-- **Patient Login**: 
+- **Patient Login**:
+
   - Patients can sign up, log in, and book appointments with doctors.
   - Manage appointments (view, cancel, or reschedule).
   - Secure online payment options available (cash, Stripe, Razorpay).
   - User profile with editable information (name, email, address, gender, birthday, profile picture).
 
 - **Doctor Login**:
+
   - Doctors can log in and manage appointments.
   - Dashboard displays earnings, number of patients, number of appointments, and latest bookings.
   - Update profile details (description, fees, address, availability status).
@@ -48,7 +50,7 @@
 
 ## 📄 About Page
 
-- Provides information about **Prescripto’s vision** and mission.
+- Provides information about **MedBrige’s vision** and mission.
 - **Why Choose Us** section highlights:
   - **Efficiency**: Streamlined appointment process.
   - **Convenience**: Online booking and payment.
@@ -115,12 +117,14 @@
 To set up and run this project locally:
 
 1. **Clone the Repository**:
+
    ```bash
-   git clone https://github.com/your-username/prescripto.git
-   cd prescripto
+   git clone https://github.com/your-username/MedBrige.git
+   cd MedBrige
    ```
 
 2. **Install Dependencies**:
+
    ```bash
    npm install
    cd client
@@ -128,6 +132,7 @@ To set up and run this project locally:
    ```
 
 3. **Environment Variables**:
+
    - Create a `.env` file in the root directory and add the following:
      ```env
      MONGO_URI=your_mongodb_connection_string
@@ -144,7 +149,7 @@ To set up and run this project locally:
 ## 📦 Folder Structure
 
 ```plaintext
-prescripto/
+MedBrige/
 ├── client/          # Frontend (React.js)
 ├── server/          # Backend (Node.js, Express.js)
 ├── models/          # MongoDB Schemas
@@ -161,10 +166,8 @@ prescripto/
 
 We welcome contributions! Please feel free to submit issues, fork the repository, and open pull requests.
 
-
 ## 🌟 Acknowledgements
 
 - Thanks to the developers and contributors of MongoDB, Express.js, React.js, Node.js, Stripe, and Razorpay for their fantastic tools and libraries.
 
 ---
-

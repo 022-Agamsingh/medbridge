@@ -27,13 +27,11 @@ const AddDoctor = () => {
 
         try {
 
-            if (!docImg) {
-                return toast.error('Image Not Selected')
-            }
-
             const formData = new FormData();
 
-            formData.append('image', docImg)
+            if (docImg) {
+                formData.append('image', docImg)
+            }
             formData.append('name', name)
             formData.append('email', email)
             formData.append('password', password)
@@ -83,7 +81,7 @@ const AddDoctor = () => {
                         <img className='w-16 bg-gray-100 rounded-full cursor-pointer' src={docImg ? URL.createObjectURL(docImg) : assets.upload_area} alt="" />
                     </label>
                     <input onChange={(e) => setDocImg(e.target.files[0])} type="file" name="" id="doc-img" hidden />
-                    <p>Upload doctor <br /> picture</p>
+                    <p>Upload doctor <br /> picture <span className='text-sm text-gray-400'>(optional)</span></p>
                 </div>
 
                 <div className='flex flex-col lg:flex-row items-start gap-10 text-gray-600'>

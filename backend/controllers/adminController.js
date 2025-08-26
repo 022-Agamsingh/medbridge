@@ -84,9 +84,18 @@ const addDoctor = async (req, res) => {
         const salt = await bcrypt.genSalt(10); // the more no. round the more time it will take
         const hashedPassword = await bcrypt.hash(password, salt)
 
-        // upload image to cloudinary
-        const imageUpload = await cloudinary.uploader.upload(imageFile.path, { resource_type: "image" })
-        const imageUrl = imageUpload.secure_url
+        // upload image to cloudinary or use default
+        let imageUrl = 'https://via.placeholder.com/300x300.png?text=Doctor'; // Default image
+        
+        if (imageFile) {
+            try {
+                const imageUpload = await cloudinary.uploader.upload(imageFile.path, { resource_type: "image" })
+                imageUrl = imageUpload.secure_url
+            } catch (cloudinaryError) {
+                console.log('Cloudinary upload failed, using default image:', cloudinaryError.message);
+                // Continue with default image URL
+            }
+        }
 
         const doctorData = {
             name,
