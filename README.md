@@ -7,7 +7,6 @@
 - **Frontend**: React.js
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Payment Gateways**: Stripe, Razorpay
 - **Authentication**: JSON Web Token (JWT)
 
 ## 🔑 Key Features
@@ -168,6 +167,6 @@ We welcome contributions! Please feel free to submit issues, fork the repository
 
 ## 🌟 Acknowledgements
 
-- Thanks to the developers and contributors of MongoDB, Express.js, React.js, Node.js, Stripe, and Razorpay for their fantastic tools and libraries.
+- Thanks to the developers and contributors of MongoDB, Express.js, React.js and Node.js, for their fantastic tools and libraries.
 
 ---
